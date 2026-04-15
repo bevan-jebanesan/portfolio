@@ -432,6 +432,32 @@ section {
     border: 1px solid var(--primary-green);
 }
 
+/* Project GitHub Link */
+.project-links {
+    margin-top: 1.2rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--light-gray);
+}
+
+.project-github-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--text-gray);
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: var(--transition-fast);
+}
+
+.project-github-link i {
+    font-size: 1.1rem;
+}
+
+.project-github-link:hover {
+    color: var(--primary-green);
+}
+
 /* Education Section */
 .education {
     background: var(--dark-gray);

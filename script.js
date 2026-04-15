@@ -87,15 +87,6 @@ window.addEventListener('load', () => {
     }
 });
 
-// Parallax effect for hero section
-window.addEventListener('scroll', () => {
-    const scrolled = window.pageYOffset;
-    const hero = document.querySelector('.hero');
-    if (hero) {
-        hero.style.transform = `translateY(${scrolled * 0.5}px)`;
-    }
-});
-
 // Tech grid hover effects
 document.addEventListener('DOMContentLoaded', () => {
     const techItems = document.querySelectorAll('.tech-item');
