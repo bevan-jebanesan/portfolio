@@ -147,23 +147,30 @@
 
                 <div class="project-card">
                     <div class="project-header">
-                        <h3>Verilog-based CNN Accelerator</h3>
-                        <span class="project-date">Ongoing</span>
+                        <h3>CNN Hardware Accelerator</h3>
+                        <span class="project-date">Sep 2025 – Dec 2025</span>
                     </div>
                     <p class="project-description">
-                        Developing a parameterized RTL CNN accelerator in SystemVerilog featuring a pipelined MAC array, 
-                        on-chip SRAM buffers, and DRAM controller for tiled feature-map access.
+                        Designed an RTL CNN accelerator in SystemVerilog implementing 4×4 convolution, Leaky ReLU,
+                        and 2×2 average pooling for 1024×1024 images. Synthesized with Synopsys DC at 24 ns —
+                        timing met with 1.90 ns positive slack.
                     </p>
                     <ul class="project-features">
-                        <li>Fixed-point arithmetic</li>
-                        <li>Leaky ReLU activation</li>
-                        <li>Line-buffer convolution</li>
-                        <li>Synopsys Design Compiler</li>
+                        <li>13-state FSM with DRAM burst I/O</li>
+                        <li>Line-buffer sliding window (5 rows on-chip)</li>
+                        <li>4-cycle multi-phase MAC unit</li>
+                        <li>185,670 cells | 368,793 µm² total area</li>
                     </ul>
                     <div class="project-tech">
                         <span class="tech-tag">SystemVerilog</span>
                         <span class="tech-tag">RTL Design</span>
+                        <span class="tech-tag">ASIC Synthesis</span>
                         <span class="tech-tag">CNN</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/bevanjebanesan1-netizen/cnn-hardware-accelerator" class="project-github-link" target="_blank">
+                            <i class="fab fa-github"></i> View on GitHub
+                        </a>
                     </div>
                 </div>
 
@@ -210,6 +217,34 @@
                         <span class="tech-tag">IoT</span>
                         <span class="tech-tag">Computer Vision</span>
                         <span class="tech-tag">Python</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>Dynamic Instruction Scheduler</h3>
+                        <span class="project-date">Nov 2025 – Dec 2025</span>
+                    </div>
+                    <p class="project-description">
+                        Built a cycle-accurate simulator of a superscalar out-of-order processor pipeline in C++.
+                        Models the full 9-stage scheduling pipeline with configurable ROB, Issue Queue, and dispatch width.
+                        Outputs per-instruction timing traces and IPC.
+                    </p>
+                    <ul class="project-features">
+                        <li>ROB-based register renaming (RMT)</li>
+                        <li>Issue Queue with oldest-first selection</li>
+                        <li>Wakeup broadcast on execute completion</li>
+                        <li>In-order retirement with ready-bit tracking</li>
+                    </ul>
+                    <div class="project-tech">
+                        <span class="tech-tag">C++</span>
+                        <span class="tech-tag">Microarchitecture</span>
+                        <span class="tech-tag">Out-of-Order Execution</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/bevanjebanesan1-netizen/dynamic-instruction-scheduler" class="project-github-link" target="_blank">
+                            <i class="fab fa-github"></i> View on GitHub
+                        </a>
                     </div>
                 </div>
 
