@@ -199,6 +199,33 @@
                 <article class="project-card reveal">
                     <div class="card-top">
                         <div class="card-tags">
+                            <span class="tag">SystemC</span>
+                            <span class="tag">HLS</span>
+                            <span class="tag">RISC-V</span>
+                        </div>
+                        <span class="card-date">Nov - Dec 2025</span>
+                    </div>
+                    <h3 class="card-title">FIR Filter Hardware Accelerator</h3>
+                    <p class="card-desc">
+                        16-tap, 16-bit FIR accelerator written in SystemC with MatchLib channels,
+                        synthesized to RTL with Catapult HLS, and driven by a RISC-V core over DMA
+                        in a full-system simulation checked against golden outputs.
+                    </p>
+                    <ul class="card-features">
+                        <li>Memory-mapped command interface with 64-bit packed data streams</li>
+                        <li>15-sample history buffer for seamless batch-to-batch filtering</li>
+                        <li>Fully unrolled MACs · 4 outputs per beat</li>
+                        <li>HLS at 5 ns: 4.81 ns critical path, positive slack</li>
+                    </ul>
+                    <a href="https://github.com/bevan-jebanesan/fir-filter-accelerator"
+                       class="card-link" target="_blank" rel="noopener">
+                        <i class="fab fa-github"></i> View on GitHub
+                    </a>
+                </article>
+
+                <article class="project-card reveal">
+                    <div class="card-top">
+                        <div class="card-tags">
                             <span class="tag">SystemVerilog</span>
                             <span class="tag">RTL Design</span>
                             <span class="tag">ASIC</span>
